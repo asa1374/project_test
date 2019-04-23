@@ -28,7 +28,13 @@ comm = (()=>{
 			$('#germany').click(()=>{
 				$('#common_area').empty();
 				$.getScript(cityjs,()=>{
-					city.init();
+					city.onCreate();
+				});
+			});
+			$('#maca').click(()=>{
+				$('#common_area').empty();
+				$.getScript(cityjs,()=>{
+					city.maca();
 				});
 			});
 		});

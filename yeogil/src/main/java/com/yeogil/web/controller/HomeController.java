@@ -1,4 +1,4 @@
-package com.yeogil.web;
+package com.yeogil.web.controller;
 
 import java.util.Locale;
 

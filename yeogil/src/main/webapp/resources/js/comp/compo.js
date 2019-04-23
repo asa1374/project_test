@@ -10,7 +10,6 @@ compo = {
 		+'				<a href="/ko/area" class="fl"><li class="on">여행지</li></a>'
 		+'				<a href="/ko/plan" class="fl"><li>일정만들기</li></a>'
 						+'<a href="https://www.agoda.com/?cid=1607809" class="fl" target="_blank"><li>호텔</li></a>'
-		+'				<a href="/ko/intro" class="fl"><li>이용방법</li></a>'
 		+'			</ul>'
 		+'		<div class="fr gnb_box">'
 						+"<a href='javascript:void(0)' class='fr' onclick='et_modal('365px','499px','1','0','/ko/member/join','2','1')'><div class='fl gnb_join_btn'>회원가입</div></a>"
@@ -54,7 +53,7 @@ compo = {
 		+'		<div class="area_top_name as">'
 		+'			아시아		</div>'
 		+'		<div class="area_list as">'
-		+'			<a href="/ko/area/nepal" class="area_n_link">'
+		+'			<a id="maca" class="area_n_link">'
 		+'				마카오&nbsp;<span>Macau</span>'
 		+'			</a>'
 		+'			<a href="/ko/area/taiwan" class="area_n_link">'
@@ -168,8 +167,7 @@ compo = {
 		+'</div>';
 	},
 	common_menu : ()=>{
-		return 
-		'<div class="area_bg top silver">' 
+		return '<div class="area_bg top silver">' 
 		+'<div class="wrap">'
 		+'	<div class="area_nav">'
 		+'		<a href="/ko/area" class="nav_btn">여행지</a>'
@@ -183,8 +181,14 @@ compo = {
 		+'	<div class="common_menu">'
 		+'		<div class="clear"></div>'
 		+'	</div>'
-		+'	<div class="inner_box">'
-		+'		<div class="img_box"></div>'
+		+'	</div>'
+		+'</div>';
+	},
+	country_detail : ()=>{
+		return '<div class="area_bg top silver country_detail">' 
+		+'<div class="wrap">'
+		+'<div class="inner_box">'
+		+'<div class="img_box"></div>'
 		+'		<div class="img_right">'
 		+'			<div class="country_info_box">'
 		+'				<div class="country_info">'
@@ -213,23 +217,14 @@ compo = {
 		+'					<div class="clear"></div>'
 		+'				</div>'
 		+'			</div>'
-		+'			<div class="clear"></div>'
 		+'		</div>'
-		+'	</div>'
-		+'	<div class="area_bg line white">'
-		+'		<div class="wrap">'
-		+'			<div class="area_title">'
-		+'				인기도시'
-		+'			</div>'
-		+'			<div class="city_list">'
-		+'			</div>	'
-		+'		</div>'
+		+'		<div class="clear"></div>'
 		+'	</div>'
 		+'</div>'
 		+'</div>';
 	},
 	tourist_city : ()=>{
-		return '<div class="wrap">'
+		return '<div class="wrap country_detail">'
 		+'	<div class="attraction_menu">'
 		+'		<div class="attraction_cate on" data-id="">'
 		+'			전체			</div>'
@@ -291,7 +286,7 @@ compo = {
 		+'</div>';
 	},
 	tourist_list : ()=>{
-		return '<div class="wrap">'
+		return '<div class="wrap country_detail">'
 		+'		<div class="list_top">'
 		+'			<div class="list_cnt">'
 		+'				총 <span>10</span>개		'
@@ -325,7 +320,7 @@ compo = {
 		+'</div>';
 	},
 	tourist_main_city : ()=>{
-		return '<div class="wrap">'
+		return '<div class="wrap country_detail">'
 		+'	<div class="list_left">'
 		+'		<div class="list_top">'
 		+'			<div class="list_cnt">'
@@ -726,7 +721,7 @@ compo = {
 		+'</div>';
 	},
 	restaurant_city : ()=>{
-		return '<div class="wrap">'
+		return '<div class="wrap country_detail">'
 		+'	<div class="category_list">'
 		+'		<div class="attraction_menu">'
 		+'			<div class="clear"></div>'
@@ -752,7 +747,7 @@ compo = {
 		+'</div>';
 	},
 	shopping_city : ()=>{
-		return '<div class="wrap">'
+		return '<div class="wrap country_detail">'
 		+'	<div class="category_list">'
 		+'		<div class="attraction_menu">'
 		+'			<div class="clear"></div>'
