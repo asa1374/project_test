@@ -110,7 +110,6 @@
 }
 
 
-/* ë¼ë””ì˜¤ */
 .radio{
 	cursor:pointer;
 }
@@ -147,7 +146,6 @@
 	clear:both;
 }
 
-/* ì…€ë ‰íŠ¸ */
 
 .select-parent{
 	position:relative;
@@ -223,8 +221,6 @@
 .select-box{
 	position:relative;
 }
-
-/* ëª¨ë‹¬ í´ëž˜ìŠ¤ */
 
 .et_modal_layer{
 	position:fixed;
